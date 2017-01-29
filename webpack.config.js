@@ -6,30 +6,30 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CSS_REGEX = /\.css$|\.scss$|\.sass$/
 
 module.exports = {
-	context: path.resolve(__dirname, './src'),
-	entry: {
-		app: './app.js',
-	},
-	output: {
-		path: path.resolve(__dirname, './dist'),
-		filename: '[name].bundle.js',
-	},
-	module: {
-		rules: [
-		{
-			test: CSS_REGEX, 
-			loader: ExtractTextPlugin.extract({
-				fallbackLoader: "style-loader",
-				loader: [
+  context: path.resolve(__dirname, './src'),
+  entry: {
+    app: './app.js',
+  },
+  output: {
+    path: path.resolve(__dirname, './dist'),
+    filename: '[name].bundle.js',
+  },
+  module: {
+    rules: [
+    {
+      test: CSS_REGEX, 
+      loader: ExtractTextPlugin.extract({
+        fallbackLoader: "style-loader",
+        loader: [
         { loader: 'css-loader' },
         { loader: 'postcss-loader' },
         { loader: 'sass-loader' }
         ]
       }),
-		} 
-		]
-	},
-	plugins: [
+    } 
+    ]
+  },
+  plugins: [
     new ExtractTextPlugin("styles.css"),
   ]
 };
