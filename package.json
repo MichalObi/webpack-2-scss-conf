@@ -13,14 +13,11 @@
     "webpack": "^2.2.0",
     "webpack-dev-server": "^2.2.0"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MichalObi/webpack-2-scss-conf.git"
   },
-  "author": "",
+  "author": "MichalObi",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/MichalObi/webpack-2-scss-conf/issues"
