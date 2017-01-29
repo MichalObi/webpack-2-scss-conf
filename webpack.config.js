@@ -21,15 +21,15 @@ module.exports = {
 			loader: ExtractTextPlugin.extract({
 				fallbackLoader: "style-loader",
 				loader: [
-				{ loader: 'css-loader' },
-				{ loader: 'postcss-loader' },
-				{ loader: 'sass-loader' }
-				]
-			}),
+        { loader: 'css-loader' },
+        { loader: 'postcss-loader' },
+        { loader: 'sass-loader' }
+        ]
+      }),
 		} 
 		]
 	},
 	plugins: [
-		new ExtractTextPlugin("styles.css"),
-	]
+  new ExtractTextPlugin("styles.css"),
+  ]
 };
