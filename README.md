@@ -11,4 +11,4 @@ $ npm i /-g/ webpack@2 webpack-dev-server@2
     $ npm i extract-text-webpack-plugin@2.0.0-beta.5 /Separate css file/
 
 ### Run Webpack
-$ webpack /-p/
+		$ webpack /-p/
