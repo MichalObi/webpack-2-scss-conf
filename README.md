@@ -1,16 +1,11 @@
-### Install Webpack v.2
-
-```sh
-$ npm i /-g/ webpack@2 webpack-dev-server@2
-```
-
 ### Install dependencies
 
 ```sh
 $ npm i 
 ```
 
-### Or manually install appropriate loader
+### Or manually install Webpack and appropriate loader
+    $ npm i /-g/ webpack@2 webpack-dev-server@2 / Webpack v.2
     $ npm i css-loader / Handle css
     $ npm i style-loader / Adding css to DOM - <style> tag injection
     $ npm i sass-loader node-sass / Handle scss
