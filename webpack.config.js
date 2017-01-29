@@ -13,13 +13,13 @@ module.exports = {
 	},
 	module: {
 		rules: [
-		{
-			test: /\.(sass|scss)$/, 
-			loader: ExtractTextPlugin.extract({
-				fallbackLoader: "style-loader",
-				loader: "css-loader!sass-loader",
-			}),
-		} 
+			{
+				test: /\.(sass|scss)$/, 
+				loader: ExtractTextPlugin.extract({
+					fallbackLoader: "style-loader",
+					loader: "css-loader!sass-loader",
+				}),
+			} 
 		]
 	},
 	plugins: [
