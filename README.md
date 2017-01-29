@@ -17,4 +17,7 @@ $ npm i
     $ npm i extract-text-webpack-plugin@2.0.0-beta.5 /Separate css file/
 
 ### Run Webpack
-		$ webpack /-p/
+
+```sh
+$ webpack /-p/
+```
