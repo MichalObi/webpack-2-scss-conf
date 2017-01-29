@@ -14,9 +14,11 @@ $ npm i
     $ npm i css-loader / Handle css
     $ npm i style-loader / Adding css to DOM - <style> tag injection
     $ npm i sass-loader node-sass / Handle scss
-    $ npm i extract-text-webpack-plugin@2.0.0-beta.5 / Separate css file 
+    $ npm i extract-text-webpack-plugin@2.0.0-beta.5 / Separate css file
+    $ npm i postcss-loader / Handle postcss plugins
+    $ npm i autoprefixer  / Vendor prefixes plugin for postcss
 
-### Run Webpack
+### Make changes in src/assets/stylesheets/style.scss and run Webpack
 
 ```sh
 $ webpack /-p/

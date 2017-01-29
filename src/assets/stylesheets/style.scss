@@ -2,9 +2,14 @@
 	color: #000;
 	font-size: 12px;
 	line-height: 22px;
-	font-weight: 400
+	font-weight: 400;
+
+  &--bold {
+    font-weight: 700;
+  }
+  
+  &--vendor-prefix {
+    user-select: none;
+  }
 }
 
-.main-header--bold {
-	font-weight: 700
-}

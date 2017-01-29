@@ -1,6 +1,9 @@
 const path = require('path');
 const webpack = require('webpack');
+const autoprefixer = require('autoprefixer');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
+const CSS_REGEX = /\.css$|\.scss$|\.sass$/
 
 module.exports = {
 	context: path.resolve(__dirname, './src'),
@@ -13,13 +16,17 @@ module.exports = {
 	},
 	module: {
 		rules: [
-			{
-				test: /\.(sass|scss)$/, 
-				loader: ExtractTextPlugin.extract({
-					fallbackLoader: "style-loader",
-					loader: "css-loader!sass-loader",
-				}),
-			} 
+		{
+			test: CSS_REGEX, 
+			loader: ExtractTextPlugin.extract({
+				fallbackLoader: "style-loader",
+				loader: [
+				{ loader: 'css-loader' },
+				{ loader: 'postcss-loader' },
+				{ loader: 'sass-loader' }
+				]
+			}),
+		} 
 		]
 	},
 	plugins: [
