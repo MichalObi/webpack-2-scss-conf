@@ -17,6 +17,10 @@ module.exports = {
   module: {
     rules: [
     {
+      test: /\.jpg$/,
+      use: [ 'file-loader' ]
+    },
+    {
       test: CSS_REGEX, 
       loader: ExtractTextPlugin.extract({
         fallbackLoader: "style-loader",
